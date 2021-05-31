@@ -2,4 +2,4 @@
 
 ## 
  1. git checkout -b dev 创建 dev分支
- 2. 
+ 2. git push origin dev 本地分支提交到远程并且新建远程分支dev

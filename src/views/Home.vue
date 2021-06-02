@@ -14,5 +14,20 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  async getList(): Promise<void> {
+    let ary = [1, 2, 3, 4, 5, 6, 7, 8];
+    const list = await new Promise((res) => {
+      setTimeout(() => {
+        res(ary);
+      }, 2000);
+    });
+    let myList = JSON.stringify(list);
+    localStorage.setItem("list", myList);
+  }
+
+  created(): void {
+    this.getList();
+  }
+}
 </script>

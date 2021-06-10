@@ -3,7 +3,9 @@
     <button @click="add">+</button>
     {{ c }}
     <button @click="handleTo">跳转</button>
-    <count ref="count" :count="c" />
+    <keep-alive>
+      <count ref="count" :count="c" />
+    </keep-alive>
   </div>
 </template>
 

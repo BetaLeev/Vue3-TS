@@ -21,6 +21,14 @@ const routes: Array<RouteRecordRaw> = [
     name: "Example",
     component: () => import("../views/my-example.vue"),
   },
+  {
+    path: "/keep-alive",
+    name: "KeepAlive",
+    meta: {
+      keepAlive: true,
+    },
+    component: () => import("../views/keep-alive.vue"),
+  },
 ];
 
 const router = createRouter({

@@ -87,7 +87,7 @@
       <h4 class="text-align">10. 使用 reduce实现map</h4>
       <div class="example-container">
         <p></p>
-        <p>{{ q10 }}</p>
+        <!-- <p>{{ q10 }}</p> -->
       </div>
     </section>
   </div>
@@ -195,9 +195,6 @@ export default class Home extends Vue {
   }
   get q9(): number {
     return 3;
-  }
-  created(): void {
-    console.log(998);
   }
 }
 </script>

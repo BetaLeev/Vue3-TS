@@ -3,10 +3,9 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About | </router-link>
     <router-link to="/example">Example|</router-link>
-
     <router-link to="/keep-alive">Keep Alive</router-link>
   </div>
-  <keep-alive>
+  <keep-alive include="KeepAlive">
     <router-view></router-view>
   </keep-alive>
 </template>

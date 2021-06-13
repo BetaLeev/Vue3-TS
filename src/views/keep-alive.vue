@@ -11,9 +11,10 @@
       </div>
     </div>
     <button @click="add">+</button>
-    {{ c }}
     <button @click="handleTo">跳转</button>
-    <count ref="count" :count="c" />
+    <keep-alive>
+      <count ref="count" :count="c" />
+    </keep-alive>
   </div>
 </template>
 
@@ -45,6 +46,17 @@ export default class Home extends Vue {
 
   private add() {
     this.c++;
+  }
+
+  activated(): void {
+    console.log("activated");
+  }
+
+  deactivated(): void {
+    console.log("deactivated");
+  }
+  created(): void {
+    console.log("created");
   }
 }
 </script>

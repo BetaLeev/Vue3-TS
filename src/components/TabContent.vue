@@ -1,7 +1,12 @@
 <template>
   <div class="user-tab">
     <ul class="user-sidebar">
-      <li v-for="item in lib" :key="item" @click="selectedUser = item">
+      <li
+        :class="['tab-nav', { 'tab-nav__active': selectedUser === item }]"
+        v-for="item in lib"
+        :key="item"
+        @click="selectedUser = item"
+      >
         {{ item.name }}
       </li>
     </ul>
@@ -90,6 +95,12 @@ ul li {
       padding-right: 10px;
       &:hover {
         cursor: pointer;
+      }
+    }
+    .tab-nav {
+      color: rgb(62, 31, 236);
+      &__active {
+        background: rgb(224, 115, 166);
       }
     }
   }

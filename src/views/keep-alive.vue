@@ -21,10 +21,12 @@
 import { Options, Vue } from "vue-class-component";
 import Count from "./TestKeepAlive.vue";
 import TabUser from "@/components/TabContent.vue";
+import TabOther from "@/components/OtherContent.vue";
 @Options({
   components: {
     Count,
     TabUser,
+    TabOther,
   },
 })
 export default class Home extends Vue {
@@ -53,8 +55,7 @@ export default class Home extends Vue {
 
   .tab-container {
     height: 333px;
-    width: 222px;
-    background: salmon;
+    width: 522px;
     margin: 0 auto;
   }
 }

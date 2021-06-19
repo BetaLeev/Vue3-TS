@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import("../views/keep-alive.vue"),
   },
+  {
+    path: "/sorting-algorithm",
+    name: "SortingAlgorithm",
+    component: () => import("../views/sorting-algorithm.vue"),
+  },
 ];
 
 const router = createRouter({

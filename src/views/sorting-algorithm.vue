@@ -8,11 +8,9 @@
 import { Options, Vue } from "vue-class-component";
 
 @Options({
-  name: "count",
-  props: {
-    count: Number,
-  },
+  name: "Sorting Algorithnm",
+  props: {},
   components: {},
 })
-export default class Count extends Vue {}
+export default class SortingAlgorithnm extends Vue {}
 </script>

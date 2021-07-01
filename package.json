@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "analyz": "npm_config_report=true npm run build",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build",
     "lint": "vue-cli-service lint",
     "prepare": "husky install",
     "precommit": "eslint src/**/*.js"

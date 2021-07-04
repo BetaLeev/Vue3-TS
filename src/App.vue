@@ -4,6 +4,7 @@
     <router-link to="/about">About | </router-link>
     <router-link to="/example">Example|</router-link>
     <router-link to="/keep-alive">Keep Alive</router-link>
+    <router-link to="/str-api">Strapi</router-link>
   </div>
   <keep-alive include="KeepAlive">
     <router-view></router-view>

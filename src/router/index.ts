@@ -34,6 +34,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "SortingAlgorithm",
     component: () => import("../views/sorting-algorithm.vue"),
   },
+  {
+    path: "/str-api",
+    name: "Strapi",
+    component: () => import("../views/strapi/index.vue"),
+  },
 ];
 
 const router = createRouter({

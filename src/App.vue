@@ -1,10 +1,13 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About | </router-link>
     <router-link to="/example">Example|</router-link>
     <router-link to="/keep-alive">Keep Alive</router-link>
     <router-link to="/str-api">Strapi</router-link>
+  </div>
+  <div class="nav">
+    <router-link to="/call">实现 call、apply和bind</router-link>
   </div>
   <keep-alive include="KeepAlive">
     <router-view></router-view>
@@ -12,6 +15,9 @@
 </template>
 
 <style lang="less">
+.nav {
+  margin-bottom: 16px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

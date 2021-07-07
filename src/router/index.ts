@@ -39,6 +39,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Strapi",
     component: () => import("../views/strapi/index.vue"),
   },
+  {
+    path: "/call",
+    name: "Call",
+    component: () => import("../views/call/index.vue"),
+  },
 ];
 
 const router = createRouter({

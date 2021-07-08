@@ -44,6 +44,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Call",
     component: () => import("../views/call/index.vue"),
   },
+  {
+    path: "/event-emitter",
+    name: "EventEmitter",
+    component: () => import("../views/event-emitter/index.vue"),
+  },
 ];
 
 const router = createRouter({

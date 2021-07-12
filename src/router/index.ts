@@ -1,7 +1,13 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
 
+const Home = () => import("../views/Home.vue");
+const About = () => import("../views/About.vue");
+
+function loadPageByRoutes(str: string) {
+  return function (resolve: any) {
+    require([`../views/${str}.vue`], resolve);
+  };
+}
 const result = [
   {
     path: "/example",

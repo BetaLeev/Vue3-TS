@@ -5,6 +5,7 @@
     <router-link to="/example">Example|</router-link>
     <router-link to="/keep-alive">Keep Alive</router-link>
     <router-link to="/str-api">Strapi</router-link>
+    <router-link to="/header-search">Header Search</router-link>
   </div>
   <div class="nav">
     <router-link to="/call">实现 call、apply和bind</router-link>

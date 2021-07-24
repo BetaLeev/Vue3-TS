@@ -70,6 +70,16 @@ const routes: Array<RouteRecordRaw> = [
     name: "EventEmitter",
     component: () => import("../views/event-emitter/index.vue"),
   },
+  {
+    path: "/object",
+    name: "Object",
+    component: () => import("../views/object/index.vue"),
+  },
+  {
+    path: "/proxy",
+    name: "Proxy",
+    component: () => import("../views/proxy/index.vue"),
+  },
 ];
 
 // import { importComponent } from "./util";

@@ -1,5 +1,7 @@
 import OptimizeCssAssetsPlugin from "optimize-css-assets-webpack-plugin";
 import UglifyJsPlugin from "uglifyjs-webpack-plugin";
+import CompressionPlugin from "compression-webpack-plugin";
+
 import HappyPack from "happypack";
 const BundleAnalyzerPlugin =
   // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -40,6 +42,10 @@ module.exports = {
     ],
   },
   plugins: [
+    new CompressionPlugin({
+      test: /\.js(\?.*)?$/i,
+      algorithm: "gzip",
+    }),
     new BundleAnalyzerPlugin(),
     new OptimizeCssAssetsPlugin.ExtractTextPlugin("styles.css"),
     new OptimizeCssAssetsPlugin({

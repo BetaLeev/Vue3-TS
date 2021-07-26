@@ -80,6 +80,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Proxy",
     component: () => import("../views/proxy/index.vue"),
   },
+  {
+    path: "/flex",
+    name: "Flex",
+    component: () => import("../views/flex/index.vue"),
+  },
 ];
 
 // import { importComponent } from "./util";

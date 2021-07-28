@@ -46,6 +46,20 @@
         </div>
       </div>
     </div>
+
+    <div class="flex-container">
+      <div>
+        <p>align-self属性允许单个项目有与其他项目不一样的对齐方式，</p>
+        <p>可覆盖align-items属性。默认值为auto，</p>
+        <p>表示继承父元素的align-items属性，</p>
+        <p>如果没有父元素，则等同于stretch。</p>
+      </div>
+      <div class="flex-box">
+        <div class="box bg-red"></div>
+        <div class="box bg-green"></div>
+        <div class="box bg-blue"></div>
+      </div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -141,6 +155,30 @@ export default class extends Vue {}
         color: rosybrown;
       }
     }
+  }
+}
+
+.flex-box {
+  margin: 33px;
+  height: 255px;
+  width: 255px;
+  border: 1px solid forestgreen;
+  background-color: rgb(83, 146, 219);
+  display: flex;
+  .box {
+    width: 33.333%;
+    height: 33.333%;
+  }
+  .bg-red {
+    background-color: red;
+  }
+  .bg-green {
+    background-color: greenyellow;
+    align-self: center;
+  }
+  .bg-blue {
+    background-color: blue;
+    align-self: flex-end;
   }
 }
 </style>

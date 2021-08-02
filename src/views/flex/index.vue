@@ -60,6 +60,45 @@
         <div class="box bg-blue"></div>
       </div>
     </div>
+
+    <h2>五种经典布局</h2>
+    <div class="layout-container">
+      <div class="layout-item layout-item__first">
+        <header>header</header>
+        <article>article</article>
+        <footer>footer</footer>
+      </div>
+      <div class="layout-item layout-item__second">
+        <header>header</header>
+        <article>
+          <aside>aside</aside>
+          <main>main</main>
+        </article>
+        <footer>footer</footer>
+      </div>
+      <div class="layout-item layout-item__third">
+        <aside>aside</aside>
+        <article>
+          <header>header</header>
+          <main>
+            main
+            <h3>flex: auto ;等同于</h3>
+            <h3>flex-grow: 1; flex-shrink: 1; flex-basis: auto;</h3>
+            <h3>flex-basis: auto;会使得盒子的宽度由盒子内容决定</h3>
+          </main>
+          <footer>footer</footer>
+        </article>
+      </div>
+      <div class="layout-item layout-item__fourth">
+        <header>header</header>
+        <article>article</article>
+        <footer>footer</footer>
+      </div>
+      <div class="layout-item layout-item__fifth">
+        左侧 sidebar 固定在左侧且与视窗同高，当内容超出视窗高度时，在 sidebar
+        内部出现滚动条。左右两侧滚动条互相独立。
+      </div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -179,6 +218,116 @@ export default class extends Vue {}
   .bg-blue {
     background-color: blue;
     align-self: flex-end;
+  }
+}
+
+.layout-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .layout-item {
+    position: relative;
+    align-self: center;
+    height: 322px;
+    width: 322px;
+    background-color: cornflowerblue;
+    margin: 11px;
+
+    &__first {
+      display: flex;
+      flex-direction: column;
+      header {
+        background-color: crimson;
+      }
+      article {
+        background-color: cyan;
+        flex: auto;
+      }
+      footer {
+        background-color: orange;
+      }
+    }
+    &__second {
+      display: flex;
+      flex-direction: column;
+      header {
+        background-color: orchid;
+      }
+      article {
+        background-color: palegreen;
+        flex: auto;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+      }
+      aside {
+        background-color: rosybrown;
+      }
+      main {
+        flex: auto;
+        background-color: rgb(83, 146, 219);
+      }
+      footer {
+        background-color: purple;
+      }
+    }
+    &__third {
+      display: flex;
+      flex-direction: row;
+      header {
+        background-color: sienna;
+      }
+      article {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      aside {
+        background-color: springgreen;
+      }
+      main {
+        background-color: sandybrown;
+        flex: auto;
+      }
+      footer {
+        background-color: orangered;
+      }
+    }
+    &__fourth {
+      display: flex;
+      flex-direction: column;
+      padding-top: 66px;
+      header {
+        height: 66px;
+        padding: 0;
+        left: 0;
+        top: 0;
+        background-color: orchid;
+        // position: fixed;
+      }
+      article {
+        flex: auto;
+        height: 888px;
+      }
+      aside {
+      }
+      main {
+      }
+      footer {
+      }
+    }
+    &_fifth {
+      header {
+      }
+      article {
+      }
+      aside {
+      }
+      main {
+      }
+      footer {
+      }
+    }
   }
 }
 </style>

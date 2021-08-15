@@ -9,6 +9,9 @@
       <router-link to="/header-search">Header Search</router-link>
       <router-link to="/object">object </router-link>
       <router-link to="/proxy">proxy </router-link>
+      <router-link to="/promise">promise </router-link>
+      <router-link to="/design-partten">Design Partten </router-link>
+      <router-link to="/type-script">typescript</router-link>
     </div>
 
     <div class="nav-main">

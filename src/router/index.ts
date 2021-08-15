@@ -85,6 +85,21 @@ const routes: Array<RouteRecordRaw> = [
     name: "Flex",
     component: () => import("../views/flex/index.vue"),
   },
+  {
+    path: "/promise",
+    name: "Promise",
+    component: () => import("../views/promise/index.vue"),
+  },
+  {
+    path: "/design-parteen",
+    name: "DesignParteen",
+    component: () => import("../views/design-partten/index.vue"),
+  },
+  {
+    path: "/type-script",
+    name: "TypeScript",
+    component: () => import("../views/ts/index.vue"),
+  },
 ];
 
 // import { importComponent } from "./util";

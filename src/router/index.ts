@@ -93,7 +93,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/design-parteen",
     name: "DesignParteen",
-    component: () => import("../views/design-partten/index.vue"),
+    component: () => import("../views/design-parteen/index.vue"),
   },
   {
     path: "/type-script",

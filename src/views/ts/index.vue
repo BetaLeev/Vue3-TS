@@ -27,6 +27,14 @@
             <article>extends 关键字实现约束</article>
           </article>
         </div>
+
+        <div class="content-container">
+          <h3 class="title">
+            类型推论(type inference),类型是在哪里如何被推断的
+          </h3>
+
+          <article></article>
+        </div>
       </div>
     </main>
   </div>

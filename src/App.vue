@@ -10,7 +10,7 @@
       <router-link to="/object">object </router-link>
       <router-link to="/proxy">proxy </router-link>
       <router-link to="/promise">promise </router-link>
-      <router-link to="/design-partten">Design Partten </router-link>
+      <router-link to="/design-parteen">Design Partten </router-link>
       <router-link to="/type-script">typescript</router-link>
     </div>
 
@@ -30,14 +30,14 @@
 <style lang="less">
 #nav {
   display: flex;
-  height: calc(100vh - 30px);
+  // height: calc(100vh - 30px);
   overflow-y: scroll;
   .nav-main {
     margin-left: 8px;
     flex: 1;
     border: 5px dotted burlywood;
     padding: 16px;
-    max-height: 100vh;
+    // max-height: 100vh;
     overflow-y: scroll;
 
     .header-menu {
